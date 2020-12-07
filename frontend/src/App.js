@@ -18,7 +18,7 @@ function App() {
         <div className="row center">
           {data.products.map((product) => (
             <div key={product._id} className="card">
-              <a href={`/product/{${product._id}`}>
+              <a href={`/product/${product._id}`}>
                 <img
                   className="img medium"
                   src={product.image}
