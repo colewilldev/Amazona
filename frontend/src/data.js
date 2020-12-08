@@ -8,6 +8,7 @@ const data ={
       price:        120,
       brand:        'Nike',
       numReviews:   11,
+      rating:       1.5,
       description: "High Quality Product"
     },
     {
@@ -18,6 +19,7 @@ const data ={
       price:       111,
       brand:       'Nike',
       numReviews:  22,
+      rating:       2.5,
       description: "High Quality Product"
     },
     {
@@ -28,6 +30,7 @@ const data ={
       price:       109,
       brand:       'Addidas',
       numReviews:  2,
+      rating:       2.5,
       description: "High Quality Product"
     },
     {
@@ -38,6 +41,7 @@ const data ={
       price:       103,
       brand:       'Addidas',
       numReviews:  3,
+      rating:       3.6,
       description: "High Quality Product"
     },
     {
@@ -47,7 +51,8 @@ const data ={
       image:       '/images/p5.jpg',
       price:       99,
       brand:       'Addidas',
-      numReviews:  2,
+      numReviews:  4,
+      rating:      4.6,
       description: "High Quality Product"
     },
     {
@@ -58,6 +63,7 @@ const data ={
       price:       100,
       brand:       'Addidas',
       numReviews:  22,
+      rating:       5,
       description: "High Quality Product"
     },
   ]
