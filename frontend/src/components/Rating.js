@@ -2,7 +2,10 @@ import React from "react";
 
 export default function Rating(props) {
   const { rating, numReviews } = props;
+<<<<<<< HEAD
 
+=======
+>>>>>>> old-state
   return (
     <div className="rating">
       <span>

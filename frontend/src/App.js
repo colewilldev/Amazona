@@ -1,8 +1,8 @@
 import data from "./data";
-import Product from "./components/Product";
-import HomeScreen from "./screens/HomeScreen";
-import ProductScreen from "./screens/ProductScreen";
 import { BrowserRouter, Route } from "react-router-dom";
+
+import ProductScreen from "./screens/ProductScreen";
+import HomeScreen from "./screens/HomeScreen";
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
         </header>
         <main>
           <Route path="/" component={HomeScreen} exact></Route>
-          <Route path="product/:id" component={ProductScreen}></Route>
+          <Route path="/product/:id" component={ProductScreen}></Route>
         </main>
         <footer className="row center">
           <p>All Rights Reserved 2021</p>
