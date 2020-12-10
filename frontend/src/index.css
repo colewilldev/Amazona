@@ -117,6 +117,9 @@ img.medium {
   max-width: 20rem;
   width: 100%;
 }
+img.large {
+  width: 100%;
+}
 /* Card */
 .card {
   border: 0.1rem solid #c0c0c0;
