@@ -1,7 +1,21 @@
+import bcrypt from "bcryptjs";
 const data = {
+  users: [
+    {
+      name: "Cole",
+      email: "wcole2222@gmail.com",
+      password: bcrypt.hashSync("1234", 8),
+      isAdmin: true,
+    },
+    {
+      name: "Tupac",
+      email: "user@gmail.com",
+      password: bcrypt.hashSync("1234", 8),
+      isAdmin: false,
+    },
+  ],
   products: [
     {
-      _id: 1,
       name: "Nike Slim Shirt",
       category: "Shirts",
       image: "/images/p1.jpg",
@@ -10,10 +24,9 @@ const data = {
       numReviews: 11,
       rating: 4.5,
       description: "High Quality Product",
-      countInStock: 10,
+      countInStock: 4,
     },
     {
-      _id: 2,
       name: "Nike Fat Shirt",
       category: "Shirts",
       image: "/images/p2.jpg",
@@ -22,10 +35,9 @@ const data = {
       numReviews: 22,
       rating: 4.5,
       description: "High Quality Product",
-      countInStock: 20,
+      countInStock: 8,
     },
     {
-      _id: 3,
       name: "Addidas Slim Shirt",
       category: "Shirts",
       image: "/images/p3.jpg",
@@ -34,10 +46,9 @@ const data = {
       numReviews: 2,
       rating: 1.5,
       description: "High Quality Product",
-      countInStock: 5,
+      countInStock: 3,
     },
     {
-      _id: 4,
       name: "Addidas Slim Pants",
       category: "Pants",
       image: "/images/p4.jpg",
@@ -46,10 +57,9 @@ const data = {
       numReviews: 3,
       rating: 2.5,
       description: "High Quality Product",
-      countInStock: 30,
+      countInStock: 9,
     },
     {
-      _id: 5,
       name: "Addidas Fat Pants",
       category: "Pants",
       image: "/images/p5.jpg",
@@ -58,10 +68,9 @@ const data = {
       numReviews: 2,
       rating: 3.5,
       description: "High Quality Product",
-      countInStock: 0,
+      countInStock: 3,
     },
     {
-      _id: 6,
       name: "Addidas Hefty Pants",
       category: "Pants",
       image: "/images/p6.jpg",
@@ -70,7 +79,7 @@ const data = {
       numReviews: 22,
       rating: 5,
       description: "High Quality Product",
-      countInStock: 0,
+      countInStock: 2,
     },
   ],
 };
