@@ -6,9 +6,9 @@ import productRouter from "./routers/productRouter.js";
 dotenv.config();
 
 const app = express();
-
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 const uri = process.env.MONGODB_URL;
-console.log(uri);
 
 mongoose.connect(uri, {
   useNewUrlParser: true,
@@ -23,14 +23,6 @@ connection.once("open", () => {
 
 app.use("/api/users", userRouter);
 app.use("/api/products", productRouter);
-
-app.get("/api/users", (req, res) => {
-  res.send(data.users);
-});
-
-app.get("/", (req, res) => {
-  res.send("Server is ready");
-});
 
 app.use((err, req, res, next) => {
   res.status(500).send({ message: err.message });
